@@ -190,12 +190,16 @@ export function HeroFloatingCards({ featured }: { featured: SamplePhoto[] }) {
           <button
             type="button"
             onClick={scrollToChapter}
-            className="glass-strong mt-12 inline-flex max-w-[min(92vw,22rem)] flex-col items-center gap-0.5 rounded-full px-4 py-2.5 text-center text-[0.8rem] leading-snug font-semibold sm:text-sm"
+            className="glass-strong mt-12 inline-flex max-w-[min(92vw,24rem)] items-center gap-2 rounded-full px-6 py-3.5 text-center text-base leading-snug font-semibold sm:px-7 sm:py-4 sm:text-lg"
             style={{ color: "#000" }}
             aria-label={dict.home.scroll}
           >
             <span style={{ color: "#000" }}>{dict.home.scroll}</span>
-            <ChevronDown className="size-4" style={{ color: "#000" }} aria-hidden />
+            <ChevronDown
+              className="size-5 shrink-0 sm:size-6"
+              style={{ color: "#000" }}
+              aria-hidden
+            />
           </button>
         </div>
         <div
@@ -249,13 +253,13 @@ export function HeroFloatingCards({ featured }: { featured: SamplePhoto[] }) {
             <button
               type="button"
               onClick={scrollToChapter}
-              className="glass-strong inline-flex max-w-[min(92vw,22rem)] flex-col items-center gap-0.5 rounded-full px-4 py-2.5 text-center text-[0.8rem] leading-snug font-semibold sm:text-sm"
+              className="glass-strong inline-flex max-w-[min(92vw,24rem)] items-center gap-2 rounded-full px-6 py-3.5 text-center text-base leading-snug font-semibold sm:px-7 sm:py-4 sm:text-lg"
               style={{ color: "#000" }}
               aria-label={dict.home.scroll}
             >
               <span style={{ color: "#000" }}>{dict.home.scroll}</span>
               <ChevronDown
-                className="size-4 motion-safe:animate-bounce"
+                className="scroll-hint-chevron size-5 shrink-0 sm:size-6"
                 style={{ color: "#000" }}
                 aria-hidden
               />

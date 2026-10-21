@@ -218,6 +218,27 @@
   }
 }
 
+/* Scroll hint chevron: bounce equally above/below center (stays optically centered) */
+@keyframes scroll-hint-bob {
+  0%,
+  100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+.scroll-hint-chevron {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-hint-chevron {
+    animation: scroll-hint-bob 1.1s ease-in-out infinite;
+  }
+}
+
 @supports (view-transition-name: none) {
   ::view-transition-old(root),
   ::view-transition-new(root) {
