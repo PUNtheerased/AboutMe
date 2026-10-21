@@ -1,0 +1,193 @@
+export type Locale = "en" | "th";
+
+export const defaultLocale: Locale = "en";
+export const localeStorageKey = "pun-locale";
+
+export const dictionaries = {
+  en: {
+    nav: {
+      home: "Home",
+      about: "About",
+      gallery: "Gallery",
+      portfolio: "Portfolio",
+      contact: "Contact",
+      menu: "Menu",
+      close: "Close",
+    },
+    home: {
+      brand: "THEERASED",
+      headline: "Code by day. Light by dusk.",
+      headlineLine1: "Code by day.",
+      headlineLine2: "Light by dusk.",
+      subline:
+        "Hi, I'm Pun, a high school student who writes code and takes photos.",
+      viewGallery: "View gallery",
+      aboutMe: "About me",
+      scroll: "see more",
+      chapterTitle: "Same curiosity. Two ways of seeing.",
+      chapterBody:
+        "Portfolios, experiments, and frames — proof of how I look at problems and light.",
+      featuredLabel: "Featured profile",
+      featuredBio:
+        "High school builder in Bangkok. CubeSat, CTF, AstroShutter — and photos between builds.",
+      featuredStatProjects: "Projects",
+      featuredStatPhotos: "Photos",
+      featuredStatFocus: "Focus",
+      twoWaysTitle: "Two ways of seeing",
+      twoWaysBody:
+        "The same curiosity, pointed at two tools. Pick a side to dive in.",
+      codeTitle: "Code",
+      codeBody: "Small tools and web experiments with a soft spot for motion.",
+      captureTitle: "Capture",
+      captureBody:
+        "Places, people and the light that makes them feel alive.",
+      codeIdentity: "CODE × CAPTURE",
+      ctaTitle: "Got an idea?",
+      ctaBody: "Say hello — I'd love to hear what you're building or shooting.",
+      ctaButton: "Contact me",
+    },
+    about: {
+      title: "Hi, I'm Pun.",
+      legalName: "Theerased Unta",
+      body: "I'm a high school student in Bangkok. I started coding to build things I wished existed, and picked up a camera to slow down and notice more. These days that looks like CubeSat work, CTF puzzles, and AstroShutter frames.",
+      codeTitle: "Code",
+      photoTitle: "Photo",
+      timelineTitle: "Timeline",
+      factsTitle: "Fun facts",
+    },
+    gallery: {
+      title: "Gallery",
+      subtitle: "Swipe or scroll sideways. Tap a photo to see it larger.",
+      all: "All",
+      carousel: "Carousel",
+      masonry: "Grid",
+      loadMore: "Load more",
+      empty:
+        "No photos yet — showing sample frames so the page still feels alive.",
+    },
+    portfolio: {
+      title: "Portfolio",
+      subtitle: "Things I've shipped, tinkered with, or still iterate on.",
+      github: "GitHub",
+      live: "Live demo",
+      overview: "Overview",
+      role: "Role",
+      tools: "Tools",
+      links: "Links",
+      year: "Year",
+      back: "Back to portfolio",
+    },
+    contact: {
+      title: "Contact",
+      subtitle: "Send a note — I usually reply within a couple of days.",
+      name: "Name",
+      email: "Email",
+      message: "Message",
+      send: "Send message",
+      sending: "Sending…",
+      success: "Message sent. I'll get back to you soon.",
+      error:
+        "Something went wrong sending your message. Please try again or email me directly.",
+    },
+    notFound: {
+      title: "This page wandered off.",
+      body: "Maybe it went looking for golden hour.",
+      home: "Back home",
+    },
+    footer: {
+      copyright: "© 2026 Theerased Unta",
+    },
+  },
+  th: {
+    nav: {
+      home: "หน้าแรก",
+      about: "เกี่ยวกับ",
+      gallery: "แกลเลอรี",
+      portfolio: "พอร์ตโฟลิโอ",
+      contact: "ติดต่อ",
+      menu: "เมนู",
+      close: "ปิด",
+    },
+    home: {
+      brand: "ธีระเศรษฐ์",
+      headline: "โค้ดตอนกลางวัน แสงตอนเย็น",
+      headlineLine1: "โค้ดตอนกลางวัน",
+      headlineLine2: "แสงตอนเย็น",
+      subline:
+        "สวัสดีครับ ผมปุณณ์ — นักเรียนมัธยมปลายผู้หลงใหลในโค้ดและแสงถ่ายภาพ",
+      viewGallery: "สำรวจแกลเลอรี",
+      aboutMe: "เกี่ยวกับผม",
+      scroll: "see more",
+      chapterTitle: "ตาเดียวกัน สองมุมมอง",
+      chapterBody:
+        "พอร์ตฯ การทดลอง และเฟรมภาพ — หลักฐานว่าผมมองปัญหาและแสงยังไง",
+      featuredLabel: "โปรไฟล์แนะนำ",
+      featuredBio:
+        "นักเรียนมัธยมที่กรุงเทพฯ CubeSat, CTF, AstroShutter — และภาพระหว่างที่สร้าง",
+      featuredStatProjects: "โปรเจกต์",
+      featuredStatPhotos: "ภาพ",
+      featuredStatFocus: "โฟกัส",
+      twoWaysTitle: "สองมุมมอง",
+      twoWaysBody: "ความอยากรู้ชุดเดียวกัน ชี้ไปสองเครื่องมือ เลือกด้านที่อยากดู",
+      codeTitle: "โค้ด",
+      codeBody: "เครื่องมือเล็ก ๆ และเว็บทดลองที่ชอบเรื่องโมชัน",
+      captureTitle: "ภาพ",
+      captureBody: "สถานที่ คน และแสงที่ทำให้ช่วงเวลานั้นมีชีวิต",
+      codeIdentity: "CODE × CAPTURE",
+      ctaTitle: "มีไอเดียไหม?",
+      ctaBody: "ทักมาได้เลย — อยากฟังว่าคุณกำลังสร้างหรือถ่ายอะไรอยู่",
+      ctaButton: "ติดต่อผม",
+    },
+    about: {
+      title: "สวัสดี ผมปุณณ์",
+      legalName: "ธีระเศรษฐ์ อุ่นต๊ะ",
+      body: "ผมเป็นนักเรียนมัธยมที่กรุงเทพฯ เริ่มเขียนโค้ดเพื่อสร้างสิ่งที่อยากมี และหยิบกล้องขึ้นมาเพื่อชะลอและสังเกตมากขึ้น ช่วงนี้คืองาน CubeSat, ปริศนา CTF และเฟรมจาก AstroShutter",
+      codeTitle: "โค้ด",
+      photoTitle: "ภาพ",
+      timelineTitle: "ไทม์ไลน์",
+      factsTitle: "เรื่องสนุก",
+    },
+    gallery: {
+      title: "แกลเลอรี",
+      subtitle: "ปัดหรือเลื่อนด้านข้าง แตะรูปเพื่อดูขนาดใหญ่",
+      all: "ทั้งหมด",
+      carousel: "คารูเซล",
+      masonry: "ตาราง",
+      loadMore: "โหลดเพิ่ม",
+      empty: "ยังไม่มีรูป — แสดงตัวอย่างไว้ก่อนให้หน้านี้ยังมีชีวิต",
+    },
+    portfolio: {
+      title: "พอร์ตโฟลิโอ",
+      subtitle: "สิ่งที่เคยปล่อย ลองเล่น หรือยังวนทำอยู่",
+      github: "GitHub",
+      live: "เดโมสด",
+      overview: "ภาพรวม",
+      role: "บทบาท",
+      tools: "เครื่องมือ",
+      links: "ลิงก์",
+      year: "ปี",
+      back: "พอร์ตโฟลิโอทั้งหมด",
+    },
+    contact: {
+      title: "ติดต่อ",
+      subtitle: "ส่งข้อความมาได้ — โดยปกติตอบภายในสองสามวัน",
+      name: "ชื่อ",
+      email: "อีเมล",
+      message: "ข้อความ",
+      send: "ส่งข้อความ",
+      sending: "กำลังส่ง…",
+      success: "ส่งข้อความแล้ว เดี๋ยวติดต่อกลับนะ",
+      error: "ส่งไม่สำเร็จ ลองอีกครั้งหรืออีเมลหาผมโดยตรง",
+    },
+    notFound: {
+      title: "หน้านี้หลงทางไปแล้ว",
+      body: "อาจไปตามหา golden hour",
+      home: "กลับหน้าแรก",
+    },
+    footer: {
+      copyright: "© 2026 Theerased Unta",
+    },
+  },
+} as const;
+
+export type Dictionary = (typeof dictionaries)["en"];
