@@ -3,7 +3,6 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { stripLocale } from "@/lib/i18n/path";
 import { cn } from "@/lib/utils";
 
 const MIN_VISIBLE_MS = 280;
@@ -91,10 +90,7 @@ function isInternalNavLink(anchor: HTMLAnchorElement, pathname: string) {
       return false;
     }
   }
-  if (href.startsWith("/")) {
-    const path = href.split("?")[0]?.split("#")[0] ?? href;
-    // Locale-only swaps use scramble decode — skip the full-page loader
-  }
+  // Locale-only swaps use scramble decode — skip the full-page loader
   return false;
 }
 

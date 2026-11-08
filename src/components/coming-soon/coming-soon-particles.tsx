@@ -282,7 +282,7 @@ export function ComingSoonParticles({ className }: { className?: string }) {
     let width = 900;
     let height = 320;
     let budget = analyzeParticleBudget(width, height, window.innerWidth);
-    let particles: Particle[] = [];
+    const particles: Particle[] = [];
 
     const morphTo = (index: number) => {
       const text = words[index % words.length]!;

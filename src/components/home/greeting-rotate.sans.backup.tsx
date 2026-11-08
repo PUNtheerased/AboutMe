@@ -143,7 +143,7 @@ export function GreetingRotate({ className }: { className?: string }) {
     let fontFamily = resolveCanvasFontFamily();
     let width = 900;
     let height = 320;
-    let particles: Particle[] = [];
+    const particles: Particle[] = [];
 
     const morphTo = (text: string) => {
       // Fill most of the canvas — hero-scale type
