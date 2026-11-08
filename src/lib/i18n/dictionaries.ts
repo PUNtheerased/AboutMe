@@ -112,6 +112,8 @@ export const dictionaries = {
       menuCredit: "dev by PUNtheerased",
       menuContactLabel: "contact ig:",
       menuContactHandle: "@pxn_t.u",
+      menuEmailLabel: "email:",
+      menuEmail: "demakpai555@gmail.com",
     },
   },
   th: {
@@ -218,6 +220,8 @@ export const dictionaries = {
       menuCredit: "พัฒนาโดย ปุณณ์ ธีระเศรษฐ์",
       menuContactLabel: "ติดต่อ ig:",
       menuContactHandle: "@pxn_t.u",
+      menuEmailLabel: "อีเมล:",
+      menuEmail: "demakpai555@gmail.com",
     },
   },
 } as const;

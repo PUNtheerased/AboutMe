@@ -223,6 +223,25 @@ export function ComingSoonNavbar() {
             {dict.comingSoon.menuContactHandle}
           </a>
         </motion.p>
+        <motion.p
+          initial={reduce || !open ? false : { opacity: 0 }}
+          animate={open ? { opacity: 1 } : { opacity: 0 }}
+          transition={
+            reduce
+              ? { duration: 0 }
+              : { duration: 0.35, delay: open ? 0.48 : 0, ease: EASE }
+          }
+          className="font-[family-name:var(--font-jetbrains)] text-sm tracking-wide text-muted"
+        >
+          {dict.comingSoon.menuEmailLabel}{" "}
+          <a
+            href={`mailto:${dict.comingSoon.menuEmail}`}
+            tabIndex={open ? 0 : -1}
+            className="underline underline-offset-4 transition hover:text-ink"
+          >
+            {dict.comingSoon.menuEmail}
+          </a>
+        </motion.p>
       </div>
     </>
   );
