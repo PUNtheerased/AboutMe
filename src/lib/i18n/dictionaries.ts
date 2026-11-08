@@ -100,13 +100,17 @@ export const dictionaries = {
     comingSoon: {
       particles: [
         "COMING SOON",
-        "Updating soon",
-        "by PUNtheerased",
-        "ig: pxn_t.u",
+        "HELLO",
+        "I'M PUN",
+        "PORTFOLIO",
+        "STAY TUNED",
+        "SOON",
       ],
       menuTitle: "Coming Soon",
-      menuBody: "The full site is still in the works. Hang tight.",
-      menuCredit: "dev by pxn_t.u",
+      menuBody:
+        "The full site is still in the works.\nCome back soon.",
+      menuCredit: "dev by PUNtheerased",
+      menuContact: "contact ig: @pxn_t.u",
     },
   },
   th: {
@@ -200,14 +204,18 @@ export const dictionaries = {
     },
     comingSoon: {
       particles: [
-        "เร็วๆ นี้",
-        "กำลังอัปเดต",
-        "โดย PUNtheerased",
-        "ig: pxn_t.u",
+        "เร็ว ๆ นี้",
+        "สวัสดี",
+        "ผมคือปุณณ์",
+        "ผลงาน",
+        "โปรดติดตาม",
+        "อีกไม่นาน",
       ],
-      menuTitle: "เร็วๆ นี้",
-      menuBody: "เว็บไซต์เต็มรูปแบบกำลังจัดทำอยู่ อดใจรออีกนิดนะ",
-      menuCredit: "พัฒนาโดย pxn_t.u",
+      menuTitle: "เร็ว ๆ นี้",
+      menuBody:
+        "เว็บไซต์เต็มรูปแบบกำลังอยู่ระหว่างสร้าง\nกลับมาเยี่ยมชมใหม่ในเร็ว ๆ นี้",
+      menuCredit: "พัฒนาโดย ปุณณ์ ธีระเศรษฐ์",
+      menuContact: "ติดต่อ ig: @pxn_t.u",
     },
   },
 } as const;

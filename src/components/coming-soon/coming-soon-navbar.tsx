@@ -186,7 +186,7 @@ export function ComingSoonNavbar() {
               ? { duration: 0 }
               : { duration: 0.4, delay: open ? 0.22 : 0, ease: EASE }
           }
-          className="max-w-[28ch] px-6 text-center text-base text-muted sm:text-lg"
+          className="max-w-[min(36rem,90vw)] whitespace-pre-line px-6 text-center text-base text-pretty break-keep text-muted sm:text-lg"
         >
           {dict.comingSoon.menuBody}
         </motion.p>
@@ -201,6 +201,18 @@ export function ComingSoonNavbar() {
           className="mt-2 font-[family-name:var(--font-jetbrains)] text-sm tracking-wide text-muted"
         >
           {dict.comingSoon.menuCredit}
+        </motion.p>
+        <motion.p
+          initial={reduce || !open ? false : { opacity: 0 }}
+          animate={open ? { opacity: 1 } : { opacity: 0 }}
+          transition={
+            reduce
+              ? { duration: 0 }
+              : { duration: 0.35, delay: open ? 0.4 : 0, ease: EASE }
+          }
+          className="font-[family-name:var(--font-jetbrains)] text-sm tracking-wide text-muted"
+        >
+          {dict.comingSoon.menuContact}
         </motion.p>
       </div>
     </>
