@@ -212,7 +212,16 @@ export function ComingSoonNavbar() {
           }
           className="font-[family-name:var(--font-jetbrains)] text-sm tracking-wide text-muted"
         >
-          {dict.comingSoon.menuContact}
+          {dict.comingSoon.menuContactLabel}{" "}
+          <a
+            href="https://www.instagram.com/pxn_t.u"
+            target="_blank"
+            rel="noopener noreferrer"
+            tabIndex={open ? 0 : -1}
+            className="underline underline-offset-4 transition hover:text-ink"
+          >
+            {dict.comingSoon.menuContactHandle}
+          </a>
         </motion.p>
       </div>
     </>

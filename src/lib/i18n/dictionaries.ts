@@ -110,7 +110,8 @@ export const dictionaries = {
       menuBody:
         "The full site is still in the works.\nCome back soon.",
       menuCredit: "dev by PUNtheerased",
-      menuContact: "contact ig: @pxn_t.u",
+      menuContactLabel: "contact ig:",
+      menuContactHandle: "@pxn_t.u",
     },
   },
   th: {
@@ -215,7 +216,8 @@ export const dictionaries = {
       menuBody:
         "เว็บไซต์เต็มรูปแบบกำลังอยู่ระหว่างสร้าง\nกลับมาเยี่ยมชมใหม่ในเร็ว ๆ นี้",
       menuCredit: "พัฒนาโดย ปุณณ์ ธีระเศรษฐ์",
-      menuContact: "ติดต่อ ig: @pxn_t.u",
+      menuContactLabel: "ติดต่อ ig:",
+      menuContactHandle: "@pxn_t.u",
     },
   },
 } as const;
