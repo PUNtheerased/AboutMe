@@ -12,6 +12,18 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  // Coming soon lives at `/` — no locale prefix required.
+  if (pathname === "/") {
+    return NextResponse.next();
+  }
+
+  // Locale home → coming soon root
+  if (locales.some((locale) => pathname === `/${locale}`)) {
+    const url = request.nextUrl.clone();
+    url.pathname = "/";
+    return NextResponse.redirect(url);
+  }
+
   const hasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
@@ -20,8 +32,7 @@ export function middleware(request: NextRequest) {
   const cookie = request.cookies.get("pun-locale")?.value;
   const locale = cookie && isLocale(cookie) ? cookie : defaultLocale;
   const url = request.nextUrl.clone();
-  url.pathname =
-    pathname === "/" ? `/${locale}` : `/${locale}${pathname}`;
+  url.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(url);
 }
 

@@ -5,7 +5,6 @@ import { getCategories, getPhotos } from "@/lib/photos";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Gallery",
   description: "Photography archive — street, portrait, travel, and more.",
 };
 

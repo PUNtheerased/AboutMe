@@ -97,6 +97,17 @@ export const dictionaries = {
     footer: {
       copyright: "© 2026 Theerased Unta",
     },
+    comingSoon: {
+      particles: [
+        "COMING SOON",
+        "Updating soon",
+        "by PUNtheerased",
+        "ig: pxn_t.u",
+      ],
+      menuTitle: "Coming Soon",
+      menuBody: "The full site is still in the works. Hang tight.",
+      menuCredit: "dev by pxn_t.u",
+    },
   },
   th: {
     nav: {
@@ -186,6 +197,17 @@ export const dictionaries = {
     },
     footer: {
       copyright: "© 2026 Theerased Unta",
+    },
+    comingSoon: {
+      particles: [
+        "เร็วๆ นี้",
+        "กำลังอัปเดต",
+        "โดย PUNtheerased",
+        "ig: pxn_t.u",
+      ],
+      menuTitle: "เร็วๆ นี้",
+      menuBody: "เว็บไซต์เต็มรูปแบบกำลังจัดทำอยู่ อดใจรออีกนิดนะ",
+      menuCredit: "พัฒนาโดย pxn_t.u",
     },
   },
 } as const;

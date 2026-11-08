@@ -85,15 +85,18 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
   ),
   title: {
-    default: "Pun — Code × Capture",
-    template: "%s · Pun",
+    absolute: "PUNtheerased",
   },
   description:
-    "Personal portfolio of Pun (Theerased Unta) — high school student in Bangkok who codes and photographs.",
+    "PUNtheerased — coming soon. Code, light, and a little chaos.",
+  icons: {
+    icon: [{ url: "/image/MeNoBG.png", type: "image/x-icon" }],
+    shortcut: [{ url: "/image/MeNoBG.png", type: "image/x-icon" }],
+    apple: [{ url: "/image/MeNoBG.png" }],
+  },
   openGraph: {
-    title: "Pun — Code × Capture",
-    description:
-      "Code by day. Light by dusk. A personal studio for programming and photography.",
+    title: "PUNtheerased",
+    description: "Coming soon — something new is taking shape.",
     type: "website",
   },
 };

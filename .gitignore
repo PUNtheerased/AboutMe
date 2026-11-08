@@ -1,4 +1,20 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ============================================================
+# ควรอัปขึ้น Git (อย่าใส่ในไฟล์นี้)
+# ------------------------------------------------------------
+# - ซอร์สโค้ด: src/, public/, supabase/ (schema/migrations)
+# - รูปที่ใช้จริงบนเว็บ: public/image/, public/*.png|svg
+# - คอนฟิกโปรเจกต์: package.json, package-lock.json,
+#   next.config.ts, tsconfig.json, eslint.config.mjs,
+#   postcss.config.mjs, README.md, .gitignore
+# - หน้า Coming Soon / components ที่แก้แล้ว
+#
+# ไม่ต้องอัป (รายการด้านล่าง = ignore)
+# ------------------------------------------------------------
+# - node_modules, .next, ไฟล์ build
+# - .env* (secrets / API keys)
+# - .vercel, โฟลเดอร์ทดลอง/_reference/_recovered
+# - log, OS junk, typescript cache
+# ============================================================
 
 # dependencies
 /node_modules
@@ -22,6 +38,7 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
 # local references / recovered dumps (not part of the app)
@@ -34,8 +51,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — อย่าอัปขึ้น Git (ใส่ secrets)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -43,3 +61,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# editor / OS
+.idea/
+.vscode/
+*.swp
+*.swo

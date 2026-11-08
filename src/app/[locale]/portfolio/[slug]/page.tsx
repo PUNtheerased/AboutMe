@@ -15,9 +15,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const item = getPortfolioItem(slug);
-  if (!item) return { title: "Portfolio" };
+  if (!item) return {};
   return {
-    title: item.title,
     description: item.description,
   };
 }
